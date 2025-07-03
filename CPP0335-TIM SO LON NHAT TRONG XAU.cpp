@@ -15,8 +15,7 @@ int main(){
 	int t; cin >> t;
 	while(t--){
 		string s; cin >> s;
-		int max=-1e9;;
-		int i=0;
+		int max=-1e9; i=0;
 		while(i<s.size()){
 			long long so=0;
 			while(s[i]<='9'&&s[i]>='0'){
