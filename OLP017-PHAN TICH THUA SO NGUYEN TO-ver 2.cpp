@@ -17,14 +17,14 @@ vector<long long> v;
 void sang(){
     for(long long i=2;i<10000001;i++){
     	a[i]=1;
-	}
+    }
     a[0]=a[1]=0;
     long long sqr=sqrt(10000000);
     for(long long i=2;i<=sqr;i++){
         if(a[i]){
             for(long long j=i*i;j<=10000000;j+=i){
-			    a[j]=0;
-			}
+		a[j]=0;
+	    }
         }
     }
     for(int i=2;i<=10000000;i++){
@@ -47,8 +47,8 @@ int main(){
             }
         }
         for(auto x:mp){
-        	cout << x.first << " " << x.second << endl;
-		}
+            cout << x.first << " " << x.second << endl;
+	}
         if(n>1) cout << n << " 1\n";
         cout << endl;
     }
