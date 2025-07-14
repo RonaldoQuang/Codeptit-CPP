@@ -39,15 +39,15 @@ int main(){
 			}
 			if(cnt==1){
 				x=1;
-				int	sum=0;
+				int sum=0;
 				for(int i=1;i<=n;i++){
-			        sum+=a[i];
-		        }
-		        if(sum%3==0){
-		        	for(int i=1;i<=n;i++){
-			            cout << a[i];
-		            }
-		            cout << " ";
+			                sum+=a[i];
+		                }
+		                if(sum%3==0){
+		                        for(int i=1;i<=n;i++){
+			                        cout << a[i];
+		                        }
+		                        cout << " ";
 				}
 			}
 			else x=0;
