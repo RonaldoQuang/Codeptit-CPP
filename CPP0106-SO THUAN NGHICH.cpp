@@ -3,9 +3,11 @@
 //Viết chương trình kiểm tra số thuận nghịch
 //Input 
 //2
-//123456789012345 12345678987654321
+//123456789012345 
+//12345678987654321
 //Output
-//NO YES
+//NO 
+//YES
 #include <iostream>
 using namespace std;
 int main(){
