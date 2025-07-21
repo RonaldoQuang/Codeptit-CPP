@@ -14,8 +14,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-	int n,k,b; cin >> n >> k >> b;
-	int a[n],cnt=0,min=1e9;
+	int n, k, b; cin >> n >> k >> b;
+	int a[n], cnt=0, min=1e9;
 	for(int i=0;i<n;i++){
 		a[i]=1;
 	}
@@ -28,7 +28,7 @@ int main(){
 			if(a[j]==0) ++cnt;
 		}
 		if(cnt<min) min=cnt;
-	    cnt=0;
+	        cnt=0;
 	}
 	cout << min; 
 }
