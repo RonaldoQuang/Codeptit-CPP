@@ -58,23 +58,23 @@ int main(){
     	for(int i=0;i<n;i++){
     		for(int j=0;j<n;j++){
     			cin >> a[i][j];
-			}
 		}
-		int x=n, max=0, cnt=0;
-		while(x>=1){
-			for(int i=0;i<=n-x;i++){
-				for(int j=0;j<=n-x;j++){
-					if(xet(a,i,j,x)==1){
-						++cnt;
-						max=x;
-						break;
-					}
+	}
+	int x=n, max=0, cnt=0;
+	while(x>=1){
+		for(int i=0;i<=n-x;i++){
+			for(int j=0;j<=n-x;j++){
+				if(xet(a,i,j,x)==1){
+					++cnt;
+					max=x;
+					break;
 				}
-				if(cnt==1) break;
 			}
 			if(cnt==1) break;
-			else x--;
 		}
-		cout << max << endl;
+		if(cnt==1) break;
+		else x--;
+	}
+	cout << max << endl;
     }
 }
